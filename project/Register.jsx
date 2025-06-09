@@ -1,16 +1,23 @@
 // import React from 'react';
  
 import React, { useState } from 'react';
-// import '../public/'
-// function Register() {
-//   return (
-//     <div style={{ textAlign: 'center', marginTop: '100px' }}>
-//       <h2>Register Page</h2>
+ import '../public/'
+function Register() {
+  return (
+   <div style={{ textAlign: 'center', marginTop: '100px' }}>
+     <h2>Register Page</h2>
        
-//     </div>
-//   );
-// }
-const Register = () => {
+    </div>
+   );
+ }
+function Register(){
+    const{Register1, handleSubmit, formState:{errors}}= useForm();
+    const onSubmit= (data) =>{
+        console.log(data);
+    }
+    const Register = () => {
+    
+
   return (
     <div className="register-container">
       <div className="register-image-section">
@@ -38,5 +45,6 @@ const Register = () => {
     </div>
   );
 };
+}
  
 export default Register;
